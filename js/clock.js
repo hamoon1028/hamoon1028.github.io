@@ -5,8 +5,9 @@ function handleclock() {
   const hour = d.getHours();
   const minute = d.getMinutes();
   const second = d.getSeconds();
-  let hourStr = `${hour < 10 ? `0${hour}` : hour}`;
-  hourStr = `${hour > 12 ? hour - 12 : hour}`;
+  let hourStr = `${hour > 12 ? hour - 12 : hour}`;
+  hourStr = `${hour < 10 ? `0${hour}` : hour}`;
+
   const minuteStr = `${minute < 10 ? `0${minute}` : minute}`;
 
   const secondStr = `${second < 10 ? `0${second}` : second}`;
