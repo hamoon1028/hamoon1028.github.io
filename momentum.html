@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="background">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Momentum</title>
+  </head>
+  <body>
+    <div class="weather"></div>
+
+    <div id="clock"></div>
+
+    <div class="LogIn">
+      <form id="loginForm" class="hidden">
+        <input required maxlength="15" type="text" />
+        <input type="submit" value="log-in" />
+      </form>
+      <span id="greeting" class="hidden"></span>
+    </div>
+
+    <div class="Todo">
+      <form id="todoForm">
+        <input required type="text" placeholder="오늘 해야할 일 입력" />
+      </form>
+      <ul id="todoList"></ul>
+    </div>
+    <div class="footer"></div>
+    <script src="js/logIn.js"></script>
+    <script src="js/todoList.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/geolocation.js"></script>
+  </body>
+</html>
